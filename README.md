@@ -35,3 +35,14 @@ make
 Then, the  `brush` executable samples a density you can adjust with the mouse (left and right clicks). Upsampling can be achieved by the "u" key.
 
 The `webcam` uses the default webcam (if present) and samples it as a density.
+
+
+## Interpolation
+
+Interpolation CUDA demo (not much faster than analogous CPU version):
+
+```
+nvcc -O3 -o interp_cuda interp_cuda.cu
+```
+
+Running this code should similarly produce `out_interp.png`, interpolating from `caterpillar.png` to `butterfly_simple.png` with 5 interpolation steps.
