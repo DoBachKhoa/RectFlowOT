@@ -1,5 +1,5 @@
 /*********************************************
- * flow_cuda.cu
+ * stippling_cuda.cu
  *
  * A CUDA translation of the CPU code that:
  *   - Computes summed-area tables (SATs) for an image,
