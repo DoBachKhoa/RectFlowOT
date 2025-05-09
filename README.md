@@ -12,6 +12,13 @@ c++ -O3 -o main main.cpp flow.cpp-I.
 
 Running this example should produce an `outAdvectedBNOT.svg` file with the stippling of the image `lionOrigami.bmp`.
 
+Alternatively, CUDA code is available to run on the GPU:
+
+```
+nvcc -O3 -o stippling_cuda stippling_cuda.cu
+```
+
+Running this code should similarly produce `output.svg'.
 
 ## Interactive stippling
 
